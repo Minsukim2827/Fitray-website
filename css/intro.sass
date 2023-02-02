@@ -1,12 +1,16 @@
 @import './styles.sass'
 
-$bg-opacity: linear-gradient($light-orange-opaque, $light-orange-opaque)
+$bg-opacity: linear-gradient(to bottom, $light-orange-opaque 0%, #1f1f1f 100%)
 
 #intro-page
+
     height: 100vh
     width: 100%
+
     background-image: $bg-opacity, url("../img/model.png")
-    background-size: cover
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center center
 
 #bmi-intro
     padding-top: 4rem
@@ -15,9 +19,11 @@ $bg-opacity: linear-gradient($light-orange-opaque, $light-orange-opaque)
 #bmi-heading
     font-size: 3rem
     margin-bottom: 1rem
+    color: white
 
 #bmi-text
     width: 50%
+    color: white
 
 #bmi-input-form
     border-style: solid

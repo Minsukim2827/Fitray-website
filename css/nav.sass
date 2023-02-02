@@ -1,5 +1,6 @@
 @import './styles.sass'
-
+.balance
+    color: $nav-color
 header
     background-color: orange
     #navbar
@@ -9,7 +10,7 @@ header
         right: 0
         transform: translateY(-80%)
         transition: transform .5s cubic-bezier(.4,0,.2,1)
-        background-color: orange
+        background: linear-gradient(to bottom, rgba(226, 118, 35, 0.912) 0%, rgba(0, 0, 0, 0.5) 80%)
         padding: 0.5rem 1.5rem
 
         #nav-left
@@ -19,22 +20,29 @@ header
         #nav-middle
             @include flex(row, center, space-evenly)
             gap: 0.5rem
+
             button
                 padding: 1rem
                 background: none
                 border: none
+                color: $nav-color
+                cursor: pointer
         #nav-right
             @include flex(row, center, space-between)
+
             gap: 5px
+            span
+                color: $nav-color
             button
                 @include center
                 background: none
                 border-radius: 50%
                 border-color: black
                 border-width: 1px
-                img
-                    width: 1rem
-                    padding: 5px
+
+            img
+                width: 1rem
+                padding: 5px
 
     &:hover #navbar
         transform: translateY(0)

@@ -17,4 +17,8 @@ html, body {
 }
 * p {
   color: rgb(85, 85, 85);
+}
+
+section {
+  padding-top: 3rem;
 }/*# sourceMappingURL=styles.css.map */

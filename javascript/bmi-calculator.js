@@ -95,9 +95,7 @@ function calculate() {
     //ELSE IF IMPERIAL UNITS, RUN THIS SCRIPT
     else {
         let weight = parseInt(document.getElementById("weight").value);
-        let lbs = weight * 2.205;
         let height = parseInt(document.getElementById("height").value);
-        let inches = height / 2.54;
         //CALCULATE BMI
         bmi = ((weight / (height * height)) * 703).toFixed(1);
         //IF BMI = X, CHANGE CATEGORY ACCORDINGLY
@@ -120,8 +118,3 @@ function calculate() {
     //UPDATE BMI VALUE
     result.textContent = bmi;
 }
-
-// ON WINDOW LOAD, SET UNITS TO METRIC
-window.onload = function () {
-    document.getElementById("metric-button").click();
-};

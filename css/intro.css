@@ -19,11 +19,17 @@ html, body {
   color: rgb(85, 85, 85);
 }
 
+section {
+  padding-top: 3rem;
+}
+
 #intro-page {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(253, 242, 233, 0.7), rgba(253, 242, 233, 0.7)), url("../img/model.png");
-  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(207, 113, 31, 0.7) 0%, #1f1f1f 100%), url("../img/model.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 #bmi-intro {
@@ -38,10 +44,12 @@ html, body {
 #bmi-heading {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: white;
 }
 
 #bmi-text {
   width: 50%;
+  color: white;
 }
 
 #bmi-input-form {

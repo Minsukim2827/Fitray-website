@@ -1,0 +1,48 @@
+@import './styles.sass'
+
+#about-page
+
+    width: 100%
+    height: 100vh
+    background-color: $darker-grey
+    p
+        border-style: solid
+        border-radius: 1rem
+        padding: 0.5rem
+
+#about-heading
+    font-size: 3rem
+    margin-bottom: 3rem
+    color: white
+    text-align: center
+
+#about-container
+    display: flex
+    justify-content: center
+    height: 60%
+
+#about-left
+    @include flex(column, center, space-between )
+    transform: translateX(-100%)
+    width: 40%
+    margin-right: 5%
+    transition: all 0.5s ease-in-out
+
+#about-right
+    @include flex(column, center, space-evenly)
+    width: 40%
+#p1
+    color: $featherweight
+    border-color: $featherweight
+#p2
+    color: $underweight
+    border-color: $underweight
+#p3
+    color: $normalweight
+    border-color: $normalweight
+#p4
+    color: $overweight
+    border-color: $overweight
+#p5
+    color: $obese
+    border-color: $obese
