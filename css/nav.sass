@@ -1,0 +1,40 @@
+@import './styles.sass'
+
+header
+    background-color: orange
+    #navbar
+        @include flex(row, center, space-between)
+        position: fixed
+        left: 0
+        right: 0
+        transform: translateY(-80%)
+        transition: transform .5s cubic-bezier(.4,0,.2,1)
+        background-color: orange
+        padding: 0.5rem 1.5rem
+
+        #nav-left
+            img
+                width: 10rem
+
+        #nav-middle
+            @include flex(row, center, space-evenly)
+            gap: 0.5rem
+            button
+                padding: 1rem
+                background: none
+                border: none
+        #nav-right
+            @include flex(row, center, space-between)
+            gap: 5px
+            button
+                @include center
+                background: none
+                border-radius: 50%
+                border-color: black
+                border-width: 1px
+                img
+                    width: 1rem
+                    padding: 5px
+
+    &:hover #navbar
+        transform: translateY(0)

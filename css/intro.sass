@@ -1,0 +1,124 @@
+@import './styles.sass'
+
+$bg-opacity: linear-gradient($light-orange-opaque, $light-orange-opaque)
+
+#intro-page
+    height: 100vh
+    width: 100%
+    background-image: $bg-opacity, url("../img/model.png")
+    background-size: cover
+
+#bmi-intro
+    padding-top: 4rem
+    margin-bottom: 2rem
+    @include flex(column, center, center)
+#bmi-heading
+    font-size: 3rem
+    margin-bottom: 1rem
+
+#bmi-text
+    width: 50%
+
+#bmi-input-form
+    border-style: solid
+    width: 50%
+    max-width: 500px
+    margin: auto
+    padding: 1rem
+    border-radius: 0.5rem
+    border: none
+    background-color: rgba(218, 103, 32, 0.803)
+
+#bmi-title
+    text-align: center
+    color: $dark-grey
+    color: white
+#bmi-input
+    @include flex(column, center, center)
+    margin: auto
+    margin-top: 5vh
+    width: 100%
+    max-width: 500px
+
+.bmi-row
+    @include flex(row,center, space-between)
+    width: 20rem
+
+input[type="range"]
+    width: 70%
+    height: 5px
+    -webkit-appearance: none
+    appearance: none
+    background-color: $light-grey
+    border-radius: 3px
+    outline: none
+input[type="range"]::-webkit-slider-thumb
+    -webkit-appearance: none
+    height: 1rem
+    width: 1rem
+    background-color: $dark-grey
+    border-radius: 50%
+    cursor: pointer
+
+#bmi-button
+    background-color: $dark-grey
+    color: #fff
+    border: none
+    cursor: pointer
+    padding: 0.5rem
+    border-radius: 1rem
+    @media (max-width: 700px)
+        width: 80%
+
+#metric-button
+    background-color: white
+    border-color: $dark-grey
+    border: none
+    cursor: pointer
+    padding: 0.5rem
+    border-radius: 1rem
+
+#imperial-button
+    background-color: white
+    border-color: $dark-grey
+    border: none
+    cursor: pointer
+    padding: 0.5rem
+    border-radius: 1rem
+
+#height-val, #weight-val, #category
+    color: white
+
+#bmi-result
+    @include flex(column, center, space-evenly)
+    gap: 1rem
+    margin-top: 1rem
+
+#unit-button-row
+    margin-bottom: 1rem
+
+.bmi-row-top
+    margin-bottom: 1rem
+
+.unit-values
+    @include flex(row, center, center)
+
+#weight-val, #height-val
+    background: none
+    border: none
+    width: 2rem
+    text-align: end
+    margin-right: 0.2rem
+    border-bottom-color: white
+    border-bottom-style: solid
+#height-unit, #weight-unit
+    color: white
+
+#result
+    background-color: rgba(51,51, 51, 1)
+    color: #0be881
+    padding: 0.5rem
+    border: $dark-grey
+    border-width: 2px
+    border-style: solid
+    border-radius: 1rem
