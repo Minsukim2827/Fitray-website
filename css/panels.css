@@ -1,3 +1,159 @@
-#panels-page {
-  height: 3000px;
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: rgb(51, 51, 51);
+}
+* h1, * h2 {
+  color: rgb(51, 51, 51);
+}
+* p {
+  color: rgb(85, 85, 85);
+}
+
+section {
+  padding-top: 5rem !important;
+}
+
+#plans-page {
+  height: auto;
+  width: 100%;
+  background: linear-gradient(to bottom, #1f1f1f 50%, rgb(85, 85, 85) 100%);
+  padding-bottom: 5rem;
+}
+
+#plans-cover {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+}
+
+#plans-heading {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  color: white;
+  text-align: center;
+}
+
+.panel-underweight {
+  color: #ffc44d;
+}
+
+.panel-normal {
+  color: #0be881;
+}
+
+.panel-overweight {
+  color: #ff884d;
+}
+
+.panel-obese {
+  color: #ff5e57;
+}
+
+.plans-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+}
+
+.plans-panel {
+  display: flex;
+  justify-content: space-between;
+  border-top-style: solid;
+  padding-top: 2rem;
+  border-color: #ffc44d;
+  gap: 1rem;
+}
+
+.plans-image {
+  width: 40%;
+}
+
+.panel-image {
+  width: 100%;
+}
+
+.plans-description {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: space-between;
+}
+
+.panel-bottom-container {
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: space-between;
+}
+.panel-bottom-container button {
+  padding: 0.5rem;
+  color: rgb(51, 51, 51);
+  background: #b1a38d;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.panel-bottom-container button:hover {
+  background: rgb(85, 85, 85);
+  color: #b1a38d;
+}
+
+.panel-cart {
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: normal;
+  gap: 1rem;
+}
+
+.panel-price {
+  font-size: 2rem;
+  color: #d7d8df;
+}
+
+.plans-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #b1a38d;
+}
+
+.panel-description {
+  color: #b1a38d;
+}
+
+.panel-title {
+  font-size: 1.7rem;
+  color: #b1a38d;
+}
+
+.panel-underweight {
+  border-color: #ffc44d;
+}
+
+.panel-normal {
+  border-color: #0be881;
+}
+
+.panel-overweight {
+  border-color: #ff884d;
+}
+
+.panel-obese {
+  border-color: #ff5e57;
 }/*# sourceMappingURL=panels.css.map */

@@ -20,5 +20,10 @@ html, body {
 }
 
 section {
-  padding-top: 5rem !important;
-}/*# sourceMappingURL=styles.css.map */
+  padding-top: 3rem;
+}
+
+footer {
+  height: 50vh;
+  background: linear-gradient(to bottom, rgba(207, 113, 31, 0.7) 0%, rgb(207, 113, 31) 50%);
+}/*# sourceMappingURL=footer.css.map */

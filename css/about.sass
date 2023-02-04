@@ -6,20 +6,26 @@
     height: 100vh
     background-color: $darker-grey
     p
-        border-style: solid
-        border-radius: 1rem
+        border-bottom-style: solid
+        color: $light
         padding: 0.5rem
+        background: linear-gradient(to bottom, $darker-grey 20%, $dark-grey 150%)
 
 #about-heading
     font-size: 3rem
-    margin-bottom: 3rem
-    color: white
+    margin-bottom: 2rem
+    color: $nav-color
     text-align: center
 
 #about-container
     display: flex
     justify-content: center
     height: 60%
+    border-top-style: solid
+    border-color: $nav-color
+    width: 80%
+    margin: auto
+    padding-top: 3rem
 
 #about-left
     @include flex(column, center, space-between )
@@ -31,18 +37,19 @@
 #about-right
     @include flex(column, center, space-evenly)
     width: 40%
+    transition: all 0.5s ease-in-out
 #p1
-    color: $featherweight
+    // color: $featherweight
     border-color: $featherweight
 #p2
-    color: $underweight
+    // color: $underweight
     border-color: $underweight
 #p3
-    color: $normalweight
+    // color: $normalweight
     border-color: $normalweight
 #p4
-    color: $overweight
+    // color: $overweight
     border-color: $overweight
 #p5
-    color: $obese
+    // color: $obese
     border-color: $obese

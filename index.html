@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="css/about.css" />
         <link rel="stylesheet" href="css/panels.css" />
         <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/services.css" />
+        <link rel="stylesheet" href="css/footer.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -24,9 +26,21 @@
                     <img src="img/logo.svg" />
                 </div>
                 <div id="nav-middle">
-                    <button>Home</button>
-                    <button>About</button>
-                    <button>Plans</button>
+                    <button id="home-button">Home</button>
+                    <button id="about-button">About</button>
+                    <div id="plans-container">
+                        <button id="plans-button">
+                            Plans<span class="arrow">&#x2193;</span>
+                        </button>
+                        <div id="plans-dropdown">
+                            <button id="underweight-button">underweight</button>
+                            <button>normal</button>
+                            <button>overweight</button>
+                            <button>obese</button>
+                        </div>
+                    </div>
+                    <button id="services-button">Services</button>
+                    <button id="contact-button">Contact</button>
                 </div>
                 <div id="nav-right">
                     <span class="balance">$10</span>
@@ -127,11 +141,187 @@
                 </div>
             </div>
         </section>
-        <section id="panels-page"></section>
+        <section id="plans-page">
+            <div id="plans-cover">
+                <h1 id="plans-heading">Plans</h1>
+                <div class="plans-container">
+                    <h2 class="plans-title">
+                        Recommended plan for underweight bmi19
+                    </h2>
+                    <div class="plans-panel panel-underweight">
+                        <div class="plans-description">
+                            <h3 class="panel-title">
+                                8 Week Mass Building Hypertrophy Workout
+                            </h3>
+                            <p class="panel-description">
+                                This 4-day program will help intermediate and
+                                advanced trainees gain size and strength.
+                                Rest-pause set, drop sets, and negatives will
+                                kick your muscle gains into high gear!
+                            </p>
+                            <div class="panel-bottom-container">
+                                <button class="view-workout-button">
+                                    View Workout
+                                </button>
+                                <div class="panel-cart">
+                                    <p class="panel-price">$48.00</p>
+                                    <button class="panel-add-to-cart">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plans-image">
+                            <img
+                                class="panel-image"
+                                src="img/normal-photo.jpg"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-container">
+                    <h2 class="plans-title">Recommended plan for normal</h2>
+                    <div class="plans-panel panel-normal">
+                        <div class="plans-description">
+                            <h3 class="panel-title">
+                                6 Day Push/Pull/Legs (PPL)
+                            </h3>
+                            <p class="panel-description">
+                                This 6 day push/pull/legs workout routine split
+                                is a high volume, rest-pause system designed for
+                                intermediate lifters looking to gain muscle and
+                                strength.
+                            </p>
+                            <div class="panel-bottom-container">
+                                <button class="view-workout-button">
+                                    View Workout
+                                </button>
+                                <div class="panel-cart">
+                                    <p class="panel-price">$55.00</p>
+                                    <button class="panel-add-to-cart">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plans-image">
+                            <img
+                                class="panel-image"
+                                src="img/overweight-photo.jpg"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-container">
+                    <h2 class="plans-title">Recommended plan for overweight</h2>
+                    <div class="plans-panel panel-overweight">
+                        <div class="plans-description">
+                            <h3 class="panel-title">
+                                20 Minute HIIT Workout You Can Do Anywhere
+                            </h3>
+                            <p class="panel-description">
+                                This 20-minute workout will help you burn
+                                calories, increase endurance, improve
+                                athleticism, and even challenge you mentally.
+                                All you need is just your bodyweight! Your body
+                                will be the tool to help you get your body
+                                right. This 20-minute workout will help you burn
+                                calories, increase endurance, improve
+                                athleticism, and even challenge you mentally.
+                                The result will be changes in the way your body
+                                looks and feels.
+                            </p>
+                            <div class="panel-bottom-container">
+                                <button class="view-workout-button">
+                                    View Workout
+                                </button>
+                                <div class="panel-cart">
+                                    <p class="panel-price">$68.00</p>
+                                    <button class="panel-add-to-cart">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plans-image">
+                            <img
+                                class="panel-image"
+                                src="img/obese-photo.jpg"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-container">
+                    <h2 class="plans-title">Recommended plan for obese</h2>
+                    <div class="plans-panel panel-obese">
+                        <div class="plans-description">
+                            <h3 class="panel-title">
+                                12 Week Fat Destroyer: Complete Fat Loss Workout
+                                & Diet Program
+                            </h3>
+                            <p class="panel-description">
+                                This workout plan is designed to help you shred
+                                fat and get in shape in only 12 weeks. This
+                                might sound like hype, but it's not. The
+                                following plan is not easy. It starts slowly,
+                                but builds rapidly. Every detail of your diet
+                                and training for the next 12 weeks will be laid
+                                out for you. You will be told exactly what to
+                                eat, how much cardio to do, and how to weight
+                                train. The goal is simple: lose fat, maintain
+                                muscle mass, get in shape and transform your
+                                physique as much as possible over the next 3
+                                months.
+                            </p>
+                            <div class="panel-bottom-container">
+                                <button class="view-workout-button">
+                                    View Workout
+                                </button>
+                                <div class="panel-cart">
+                                    <p class="panel-price">$57.00</p>
+                                    <button class="panel-add-to-cart">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plans-image">
+                            <img
+                                class="panel-image"
+                                src="img/underweight-photo.jpg"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services-page">
+            <h1 id="services-heading">Services</h1>
+            <div id="services-container">
+                <div class="services-panel">
+                    <img src="img/fit-smarttimer.svg" />
+                    <span class="center-text hovertext">Fitray Tracker</span>
+                </div>
+                <div class="services-panel">
+                    <img src="img/fit-bodyfat.svg" />
+                    <span class="center-text hovertext">Fitray Comp</span>
+                </div>
+                <div class="services-panel">
+                    <img src="img/fit-meal.svg" />
+                    <span class="center-text hovertext">Fitray Diet</span>
+                </div>
+            </div>
+        </section>
+        <footer id="contact-page">
+            <h1 id="footer-heading">footer</h1>
+        </footer>
 
         <!-- Script -->
         <script src="javascript/script.js"></script>
+        <script src="javascript/nav.js"></script>
         <script src="javascript/bmi-calculator.js"></script>
         <script src="javascript/about.js"></script>
+        <script src="javascript/panels.js"></script>
+        <script src="javascript/services.js"></script>
     </body>
 </html>

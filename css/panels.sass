@@ -1,2 +1,84 @@
-#panels-page
-    height: 3000px
+@import './styles.sass'
+
+#plans-page
+    height: auto
+    width: 100%
+
+    background: linear-gradient(to bottom, $darker-grey 50%, $light-grey 100%)
+    padding-bottom: 5rem
+
+#plans-cover
+    width: 80%
+    margin: auto
+    display: flex
+    flex-direction: column
+    max-width: 1400px
+
+#plans-heading
+    font-size: 3rem
+    margin-bottom: 4rem
+    color: white
+    text-align: center
+
+.panel-underweight
+    color: $underweight
+.panel-normal
+    color: $normalweight
+.panel-overweight
+    color: $overweight
+.panel-obese
+    color: $obese
+.plans-container
+    height: 100vh
+    @include flex (column, normal, center)
+.plans-panel
+    display: flex
+    justify-content: space-between
+    border-top-style: solid
+    padding-top: 2rem
+    border-color: $underweight
+    gap: 1rem
+.plans-image
+    width: 40%
+.panel-image
+    width: 100%
+.plans-description
+    width: 70%
+    @include flex(column, normal, space-between)
+.panel-bottom-container
+    @include flex(row, normal, space-between)
+    button
+        padding: 0.5rem
+        color: $dark-grey
+        background: $light
+        border: none
+        border-radius: 0.3rem
+        cursor: pointer
+        transition: all 0.2s ease-in-out
+        &:hover
+            background: $light-grey
+            color: $light
+.panel-cart
+    @include flex(row, normal, normal)
+    gap: 1rem
+.panel-price
+    font-size: 2rem
+    color: $nav-color
+.plans-title
+    font-size: 1.5rem
+    margin-bottom: 2rem
+    color: $light
+.panel-description
+    color: $light
+.panel-title
+    font-size: 1.7rem
+    color: $light
+
+.panel-underweight
+    border-color: $underweight
+.panel-normal
+    border-color: $normalweight
+.panel-overweight
+    border-color: $overweight
+.panel-obese
+    border-color: $obese

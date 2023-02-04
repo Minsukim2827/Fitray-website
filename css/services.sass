@@ -1,0 +1,59 @@
+@import './styles.sass'
+
+#services-page
+    height: 100vh
+    width: auto
+    background: $light-grey
+
+#services-container
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    gap: 5rem
+    img
+        width: auto
+        transition: all 0.3s ease-in-out
+.center-text
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    margin: auto
+    width: 50%
+    height: 50%
+    display: flex
+    background: none
+    align-items: center
+    justify-content: center
+    color: $nav-color
+    font-size: 2rem
+    transition: all 0.3s ease-in-out
+    cursor: pointer
+    opacity: 0
+
+#services-heading
+    text-align: center
+    font-size: 3rem
+    color: $nav-color
+    margin-bottom: 4rem
+.services-panel
+    opacity: 1
+    transition: all 0.3s ease-in-out
+    width: 25%
+    max-width: 300px
+    border-radius: 1rem
+    cursor: pointer
+    text-align: center
+    padding: 1rem
+    position: relative
+    &:hover
+        background: $dark-grey
+        // .center-text
+        //     display: flex
+        img
+            opacity: 0.5
+
+.services-panel:hover .center-text
+    opacity: 1
