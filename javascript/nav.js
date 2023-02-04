@@ -29,3 +29,24 @@ plansButton.addEventListener("click", function () {
 contactButton.addEventListener("click", function () {
     contactsection.scrollIntoView({ behavior: "smooth" });
 });
+
+const underweightButton = document.querySelector("#underweight-button");
+const normalButton = document.querySelector("#normal-button");
+const overweightButton = document.querySelector("#overweight-button");
+const obeseButton = document.querySelector("#obese-button");
+
+underweightButton.addEventListener("click", function () {
+    bmi1.scrollIntoView({ behavior: "smooth" });
+});
+
+normalButton.addEventListener("click", function () {
+    bmi2.scrollIntoView({ behavior: "smooth" });
+});
+
+overweightButton.addEventListener("click", function () {
+    bmi3.scrollIntoView({ behavior: "smooth" });
+});
+
+obeseButton.addEventListener("click", function () {
+    bmi4.scrollIntoView({ behavior: "smooth" });
+});

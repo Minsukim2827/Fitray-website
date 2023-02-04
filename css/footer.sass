@@ -1,5 +1,32 @@
 @import './styles.sass'
 
-footer
-    height: 50vh
-    background: linear-gradient(to bottom, $light-orange-opaque 0%, $orange 50%)
+#contact-page
+    height: auto
+    background: $light-grey
+
+#footer-heading
+    text-align: center
+    font-size: 2rem
+    color: $orange
+    margin-bottom: 1rem
+
+#contact-container
+    @include flex(column, center, center)
+    p
+        text-align: center
+        margin-bottom: 1rem
+        color: $orange
+    a
+        text-decoration: none
+        color: $darker-grey
+#contact-top
+    margin-bottom: 1rem
+    img
+
+        width: 50px
+        color: white
+
+.contact-row
+    display: flex
+    justify-content: center
+    gap: 1rem
