@@ -118,3 +118,22 @@ function calculate() {
     //UPDATE BMI VALUE
     result.textContent = bmi;
 }
+
+const bmiButton = document.querySelector("#bmi-button");
+const cat = document.querySelector("#category");
+const bmi1 = document.querySelector(".bmi1");
+const bmi2 = document.querySelector(".bmi2");
+const bmi3 = document.querySelector(".bmi3");
+const bmi4 = document.querySelector(".bmi4");
+
+bmiButton.addEventListener("click", function () {
+    if (cat.innerText === "Underweight") {
+        bmi1.scrollIntoView({ behavior: "smooth" });
+    } else if (cat.innerText === "Normal Weight") {
+        bmi2.scrollIntoView({ behavior: "smooth" });
+    } else if (cat.innerText === "Overweight") {
+        bmi3.scrollIntoView({ behavior: "smooth" });
+    } else if (cat.innerText === "Obese") {
+        bmi4.scrollIntoView({ behavior: "smooth" });
+    }
+});
