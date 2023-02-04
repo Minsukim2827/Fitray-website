@@ -3,6 +3,7 @@ html, body {
   font-size: 18px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -50,13 +51,20 @@ section {
   text-decoration: none;
   color: #1f1f1f;
 }
+#contact-container a:hover {
+  color: rgb(207, 113, 31);
+}
 
 #contact-top {
   margin-bottom: 1rem;
 }
 #contact-top img {
+  cursor: pointer;
   width: 50px;
   color: white;
+}
+#contact-top img:hover {
+  filter: invert(47%) sepia(50%) saturate(846%) hue-rotate(348deg) brightness(96%) contrast(85%);
 }
 
 .contact-row {

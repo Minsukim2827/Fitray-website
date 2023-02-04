@@ -3,6 +3,7 @@ html, body {
   font-size: 18px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -24,9 +25,10 @@ section {
 }
 
 #services-page {
-  height: 100vh;
+  height: auto;
   width: auto;
   background: rgb(85, 85, 85);
+  padding-bottom: 5rem;
 }
 
 #services-container {
@@ -88,4 +90,14 @@ section {
 
 .services-panel:hover .center-text {
   opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .center-text {
+    opacity: 1;
+    position: relative;
+  }
+  #services-container {
+    gap: 2rem;
+  }
 }/*# sourceMappingURL=services.css.map */

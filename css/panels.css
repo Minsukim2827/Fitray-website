@@ -3,6 +3,7 @@ html, body {
   font-size: 18px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -40,7 +41,7 @@ section {
 
 #plans-heading {
   font-size: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   color: white;
   text-align: center;
 }
@@ -135,11 +136,13 @@ section {
 
 .panel-description {
   color: #b1a38d;
+  margin-bottom: 1rem;
 }
 
 .panel-title {
   font-size: 1.7rem;
   color: #b1a38d;
+  margin-bottom: 1rem;
 }
 
 .panel-underweight {
@@ -156,4 +159,40 @@ section {
 
 .panel-obese {
   border-color: #ff5e57;
+}
+
+@media (max-width: 700px) {
+  .plans-panel {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .plans-image {
+    width: 90%;
+  }
+  .panel-bottom-container {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .panel-bottom-container p {
+    font-size: 1.2rem;
+  }
+  .panel-bottom-container button {
+    font-size: 0.8rem;
+  }
+  .panel-cart {
+    display: flex;
+    align-items: center;
+  }
+  .plans-description {
+    width: 95%;
+  }
+  .plans-container {
+    height: auto;
+    margin-bottom: 50%;
+    padding-top: 20%;
+  }
+  .panel-description {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=panels.css.map */

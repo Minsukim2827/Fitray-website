@@ -3,6 +3,7 @@ html, body {
   font-size: 18px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -62,6 +63,7 @@ section {
   width: 40%;
   margin-right: 5%;
   transition: all 0.5s ease-in-out;
+  overflow: hidden !important;
 }
 
 #about-right {
@@ -71,6 +73,7 @@ section {
   justify-content: space-evenly;
   width: 40%;
   transition: all 0.5s ease-in-out;
+  overflow: hidden !important;
 }
 
 #p1 {
@@ -91,4 +94,15 @@ section {
 
 #p5 {
   border-color: #ff5e57;
+}
+
+@media (max-width: 700px) {
+  #about-container {
+    width: 95%;
+    height: 80%;
+  }
+  #about-page p {
+    font-size: 0.9rem;
+    height: auto;
+  }
 }/*# sourceMappingURL=about.css.map */

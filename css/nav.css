@@ -3,6 +3,7 @@ html, body {
   font-size: 18px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -30,7 +31,8 @@ section {
 header {
   background-color: orange;
 }
-header #navbar {
+
+#navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,12 +46,12 @@ header #navbar {
   padding: 0rem 1.5rem;
   z-index: 100;
 }
-header #navbar:hover {
+#navbar:hover {
   transform: translateY(0%);
 }
 
 #nav-left img {
-  width: 10rem;
+  width: 8rem;
 }
 
 #nav-middle {
@@ -129,4 +131,13 @@ header #navbar:hover {
 #underweight-button {
   border-top-style: solid;
   border-top-color: black;
+}
+
+@media (max-width: 700px) {
+  #nav-middle {
+    display: none;
+  }
+  #navbar {
+    transform: translateY(0%);
+  }
 }/*# sourceMappingURL=nav.css.map */

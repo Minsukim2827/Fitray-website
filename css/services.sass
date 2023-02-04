@@ -1,9 +1,10 @@
 @import './styles.sass'
 
 #services-page
-    height: 100vh
+    height: auto
     width: auto
     background: $light-grey
+    padding-bottom: 5rem
 
 #services-container
     display: flex
@@ -57,3 +58,10 @@
 
 .services-panel:hover .center-text
     opacity: 1
+
+@media (max-width: 700px)
+    .center-text
+        opacity: 1
+        position: relative
+    #services-container
+        gap: 2rem

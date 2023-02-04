@@ -20,6 +20,7 @@ $bg-opacity: linear-gradient(to bottom, $light-orange-opaque 0%, #1f1f1f 100%)
     font-size: 3rem
     margin-bottom: 1rem
     color: white
+    text-align: center
 
 #bmi-text
     width: 50%
@@ -48,7 +49,7 @@ $bg-opacity: linear-gradient(to bottom, $light-orange-opaque 0%, #1f1f1f 100%)
 
 .bmi-row
     @include flex(row,center, space-between)
-    width: 20rem
+    width: 90%
 
 input[type="range"]
     width: 70%
@@ -128,3 +129,13 @@ input[type="range"]::-webkit-slider-thumb
     border-width: 2px
     border-style: solid
     border-radius: 1rem
+
+@media (max-width: 700px)
+
+    #bmi-text
+        width: 80%
+        text-align: center
+    #bmi-input-form
+        width: 80%
+    #intro-page
+        height: auto

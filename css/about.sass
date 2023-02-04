@@ -5,6 +5,7 @@
     width: 100%
     height: 100vh
     background-color: $darker-grey
+
     p
         border-bottom-style: solid
         color: $light
@@ -33,11 +34,13 @@
     width: 40%
     margin-right: 5%
     transition: all 0.5s ease-in-out
+    overflow: hidden !important
 
 #about-right
     @include flex(column, center, space-evenly)
     width: 40%
     transition: all 0.5s ease-in-out
+    overflow: hidden !important
 #p1
     // color: $featherweight
     border-color: $featherweight
@@ -53,3 +56,13 @@
 #p5
     // color: $obese
     border-color: $obese
+
+@media (max-width: 700px)
+    #about-container
+        width: 95%
+        height: 80%
+
+    #about-page
+        p
+            font-size: 0.9rem
+            height: auto
